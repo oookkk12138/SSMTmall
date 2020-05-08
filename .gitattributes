@@ -3,3 +3,4 @@
 *.js linguist-language=Java 
 *.xml linguist-language=Java
 *.css linguist-language=Java 
+*.jpg linguist-language=Java 
