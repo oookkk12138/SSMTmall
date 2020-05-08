@@ -1,0 +1,118 @@
+#background{
+	width:96%;
+	height:1000px;
+	margin:0 auto;
+}
+#background #categoryManager{
+	width:100%;
+	height:50px;
+	padding-top:10px;
+}
+#background #categoryManagerTopSpan{
+	display:block;
+	margin-top:10px;
+	color:#5bc0de;
+	font-weight:bold;
+	font-size:18px;
+	height:26px;
+	width:96px;
+	background:#5bc0de;
+	text-align:center;
+	color:white;
+	border-radius:50px;
+}
+#background #tableDiv table thead{
+	font-size:18px;
+	font-weight:bold;
+	line-height:2em;
+}
+#background #tableDiv table td{
+	height:40px;
+	text-align:center;
+}
+#background #tableDiv table td span{
+	font-size:18px;
+	line-height:2em;
+}
+#background #tableDiv table td a:hover{
+	text-decoration:none;
+	color:#c40000;
+}
+#background #fenYe{
+	text-align:center;
+}
+#background #buttomDiv{
+	width:50%;
+	margin:0 auto;
+}
+#background #buttomDiv table{
+	margin:0 auto;
+	width:600px;
+	border:1px solid #faebcc;
+}
+#background #buttomDiv tr{
+	height:60px;
+}
+#background #buttomDiv table thead td{
+	background:#fcf8e3;
+	font-weight:bold;
+	color:#8a6d3b;
+}
+#background #buttomDiv table tr td input{
+	height:40px;
+	width:300px;
+}
+#background #buttomDiv td{
+	font-size:18px;
+	line-height:2em;
+}
+#background #submit{
+	height:40px;
+	width:70px;
+	text-decoration:center;
+	vertical-align:middle;
+	text-decoration:none;
+	border:none;
+	border-radius:50px;
+}
+
+#background #moTaiBackground{
+	position:fixed;
+	top:250px;
+	left:450px;
+}
+#background #moTaiBackground{
+	width:50%;
+	margin:0 auto;
+}
+#background #moTaiBackground table{
+	margin:0 auto;
+	width:600px;
+	border:1px solid #faebcc;
+	background:pink;
+}
+#background #moTaiBackground tr{
+	height:60px;
+}
+#background #moTaiBackground table thead td{
+	background:#fcf8e3;
+	font-weight:bold;
+	color:#8a6d3b;
+}
+#background #moTaiBackground table tr td input{
+	height:40px;
+	width:300px;
+}
+#background #moTaiBackground td{
+	font-size:18px;
+	line-height:2em;
+}
+#background #moTaiBackground #submit{
+	height:40px;
+	width:70px;
+	text-decoration:center;
+	vertical-align:middle;
+	text-decoration:none;
+	border:none;
+	border-radius:50px;
+}

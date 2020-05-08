@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    <mapper namespace="dao.OrderDao">
+    	<insert id="addOrder" parameterType="pojo.Order" useGeneratedKeys="true" keyProperty="id">
+    		insert into order_ values(null,#{orderCode},#{address},#{post},#{receiver},#{mobile},#{userMessage},#{createDate},#{payDate},#{deliverDate},#{confirmDate},#{status},#{userId})
+    	</insert>
+    	<select id="getOrderById" parameterType="int" resultType="pojo.Order">
+    		select * from order_ where id = #{id}
+    	</select>
+    	<update id="updateStatusById">
+    		update order_ set status = #{status} where id = #{id}
+    	</update>
+    	<update id="updatePayDateById">
+    		update order_ set paydate = #{payDate} where id = #{id}
+    	</update>
+    	<select id="getAllOrderByUserId" parameterType="int" resultType="pojo.Order">
+    		select * from order_ where userid = #{userId} and status != '已删除'
+    	</select>
+    	<update id="updateDeliverDateById">
+    		update order_ set deliverdate = #{deliverDate} where id = #{id}
+    	</update>
+    	<update id="updateConfirmDateById">
+    		update order_ set confirmdate = #{confirmDate} where id = #{id}
+    	</update>
+    	<select id="getAllOrderForAdmin" resultType="pojo.Order">
+    		select * from order_ order by id desc
+    	</select>
+    </mapper>

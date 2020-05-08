@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    <mapper namespace="dao.PropertyValueDao">
+    	<select id="getPropertyValueByProductId" parameterType="int" resultType="pojo.PropertyValue">
+    		select * from propertyvalue where productid = #{productId}
+    	</select>
+    	<select id="getAllPropertyValueByProductIdForAdmin" parameterType="int" resultType="pojo.PropertyValue">
+    		select * from propertyvalue where productid = #{productId}
+    	</select>
+    	<select id="getPropertyValueByProductIdAndPropertyIdForAdmin" resultType="pojo.PropertyValue">
+    		select * from propertyvalue where productid = #{productId} and propertyid = #{propertyId}
+    	</select>
+    	<insert id="addPropertyValueForAdmin">
+    		insert into propertyvalue values(null,#{value},#{productId},#{propertyId})
+    	</insert>
+    	<update id="updatePropertyValueForAdmin">
+    		update propertyvalue set value = #{value} where productid = #{productId} and propertyId = #{propertyId}
+    	</update>
+    </mapper>

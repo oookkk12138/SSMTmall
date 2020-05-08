@@ -1,0 +1,106 @@
+#background{
+	width:60%;
+	margin:0 auto;
+	color:black;
+	font-size:12px;
+	font-family:Arial;
+}
+
+#background #bottomDiv{
+	width:100%;
+	height:50px;
+	background:#e5e5e5;
+}
+#background .cartNotSelected{
+	cursor:pointer;
+	position:absolute;
+}
+	/*cursor:pointer为设置鼠标放上去呈手指形状*/
+#background .cartSelected{
+	cursor:pointer;
+	position:relative;
+	top:-3px;
+	visibility:hidden;
+}
+	/*把前面的selected设置为绝对定位使得他的位置空出来了，
+	再用selected2的相对定位去占用它的空间，做到与全选哪里
+	没有空隙（距离不大）*/
+#background tbody .cartNotSelected{
+	position:relative;
+}
+#background tbody .cartSelected{
+	position:relative;
+	left:18px;
+	z-index:1;
+	top:0.2px;
+}
+#background #left{
+	float:left;
+	margin-top:16px;
+	margin-left:30px;
+}
+#background #right{
+	float:right;
+}
+#background #right #buttomButton{
+	width:120px;
+	height:50px;
+	border:0px #aaaaaa solid;
+	color:white;
+	font-size:20px;
+	outline:none;
+}
+#background #topDiv tbody .commodityImage{
+	width:80px;
+	height:80px;
+	border:1px solid #eeeeee;
+}
+#background #topDiv table{
+	width:100%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+	/*tr标签原本是没有border属性的,要把table设置为边框折叠状态tr才能使用边框*/
+#background #topDiv tbody tr{
+	border:1px solid #cccccc;
+}
+#background #images span{
+	display:inline-block;
+	margin-top:30px;
+	margin-left:10px;
+}
+#background #topDiv td{
+	padding:20px 10px;
+}
+#background #oldPrice{
+	text-decoration:line-through;
+	color:#9c9c9c;
+	font-weight:bold;
+	font-size:14px;
+}
+	/*text-decoration:line-through;是删除线*/
+#background .newPrice{
+	font-weight:bold;
+	font-size:14px;
+	color:#c40000;
+	margin-top:10px;
+}
+#background #inputBtn{
+	width:80px;
+	border:1px solid #e5e5e5;
+}
+#background #inputBtn a{
+	display:inline-block;
+	text-align:center;
+	width:14px;
+	text-decoration:none;
+}
+#background #topDiv input{
+	width:42px;
+	border:1px solid #aaaaaa;
+}
+#background #topDiv .total{
+	font-size:14px;
+	font-weight:bold;
+	color:#c40000;
+}

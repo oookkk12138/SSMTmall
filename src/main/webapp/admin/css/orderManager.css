@@ -1,0 +1,106 @@
+#background{
+	width:96%;
+	height:1000px;
+	margin:0 auto;
+
+}
+#categoryManager{
+	width:100%;
+	height:50px;
+	padding-top:10px;
+}
+#categoryManagerTopSpan{
+	display:block;
+	margin-top:10px;
+	color:#5bc0de;
+	font-weight:bold;
+	font-size:18px;
+	height:26px;
+	width:96px;
+	background:#5bc0de;
+	text-align:center;
+	color:white;
+	border-radius:50px;
+}
+#tableDiv table thead{
+	font-size:18px;
+	font-weight:bold;
+	line-height:2em;
+}
+#tableDiv table td{
+	height:40px;
+	text-align:center;
+}
+#tableDiv table td span{
+	font-size:18px;
+	line-height:2em;
+}
+#tableDiv table td a:hover{
+	text-decoration:none;
+	color:#c40000;
+}
+#fenYe{
+	text-align:center;
+}
+
+#myModal{
+	position:fixed;
+	top:100px;
+}
+#orders{
+	width:60%;
+	margin:0 auto;
+}
+#background #orders table{
+	font-size:12px;
+}
+#background #orders table td{
+	padding:10px 0px;
+	text-align:center;
+}
+#background #orders .order{
+	margin-top:20px;
+}
+#background #orders .order table{
+	border:2px solid #ececec;
+	font-size:12px;
+	padding:20px 0px;
+	text-align:center;
+	margin:0 auto;
+	background:pink;
+}
+#background #orders .order table:hover{
+	border:2px solid #aaa;
+}
+#background #orders .order table td{
+	padding:8px 10px;
+}
+#background #orders .first{
+	background:#f1f1f1;
+}
+
+#background #orders .second div img{
+	position:relative;
+	left:-150px;
+}
+#background #orders .oldPrice{
+	color:#999999;
+	font-size:14px;
+}
+#background #orders .newPrice{
+	color:#3c3c3c;
+	font-size:14px;
+}
+
+#background #orders .orderListItemDelete{
+	display:inline-block;
+	margin:0px 10px;
+	color:#999999;
+	font-size:16px;
+}
+#background #orders #head a #allOrders{
+	color:#c40000;
+}
+#background #orders .deleteOrder{
+	cursor:pointer;
+}

@@ -1,0 +1,105 @@
+#background{
+	width:96%;
+	margin:0 auto;
+	height:1000px;
+}
+#topNavigation{
+	font-size:18px;
+}
+#topNavigation a:hover{
+	text-decoration:none;
+}
+#tableDiv table thead{
+	font-size:18px;
+	font-weight:bold;
+	line-height:2em;
+}
+#tableDiv table td{
+	height:40px;
+	text-align:center;
+}
+#tableDiv table td span{
+	font-size:18px;
+	line-height:2em;
+}
+#tableDiv table td a:hover{
+	text-decoration:none;
+	color:#c40000;
+}
+#fenYe{
+	text-align:center;
+}
+#buttomDiv{
+	width:50%;
+	margin:0 auto;
+}
+#buttomDiv table{
+	margin:0 auto;
+	width:600px;
+	border:1px solid #faebcc;
+}
+#buttomDiv tr{
+	height:60px;
+}
+#buttomDiv table thead td{
+	background:#fcf8e3;
+	font-weight:bold;
+	color:#8a6d3b;
+}
+#buttomDiv table tr td input{
+	height:40px;
+	width:300px;
+}
+#buttomDiv td{
+	font-size:18px;
+	line-height:2em;
+}
+#submit{
+	height:40px;
+	width:70px;
+	text-decoration:center;
+	vertical-align:middle;
+	text-decoration:none;
+	border:none;
+	border-radius:50px;
+}
+
+#myModal{
+	position:fixed;
+	top:200px;
+}
+#moTaiBackground{
+	width:50%;
+	margin:0 auto;
+}
+#moTaiBackground table{
+	margin:0 auto;
+	width:600px;
+	border:1px solid #faebcc;
+	background:pink;
+}
+#moTaiBackground tr{
+	height:60px;
+}
+#moTaiBackground table thead td{
+	background:#fcf8e3;
+	font-weight:bold;
+	color:#8a6d3b;
+}
+#moTaiBackground table tr td input{
+	height:40px;
+	width:300px;
+}
+#moTaiBackground td{
+	font-size:18px;
+	line-height:2em;
+}
+#moTaiBackground #submit1{
+	height:40px;
+	width:70px;
+	text-decoration:center;
+	vertical-align:middle;
+	text-decoration:none;
+	border:none;
+	border-radius:50px;
+}

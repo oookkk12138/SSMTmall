@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    <mapper namespace="dao.PropertyDao">
+    	<select id="getPropertyByCategoryId" parameterType="int" resultType="pojo.Property">
+    		select * from property where categoryid = #{categoryId}
+    	</select>
+    	<select id="getAllPropertyByCategoryIdForAdmin" parameterType="int" resultType="pojo.Property">
+    		select * from property where categoryid = #{categoryId}
+    	</select>
+    	<insert id="addPropertyForAdmin">
+    		insert into property values(null,#{name},#{categoryId})
+    	</insert>
+    	<update id="updatePropertyByIdForAdmin">
+    		update property set name = #{propertyName} where id = #{propertyId}
+    	</update>
+    	<delete id="deletePropertyByIdForAdmin" parameterType="int">
+    		delete from property where id = #{id}
+    	</delete>
+    	<select id="getPropertyLocation" parameterType="int" resultType="int">
+    		select count(*) from property where #{id} > id 
+    	</select>
+    </mapper>

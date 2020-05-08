@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    <mapper namespace="dao.UserDao">
+    	<select id="getUserById" parameterType="int" resultType="pojo.User">
+    		select * from user where id = #{id}
+    	</select>
+    	<select id="getUserByNameAndPassword" resultType="pojo.User">
+    		select * from user where name = #{name} and password = #{password}
+    	</select>
+    	<update id="updateLoginTimeById">
+    		update user set loginTime = #{loginTime} where id = #{id}
+    	</update>
+    	<insert id="insertUser" parameterType="pojo.User">
+    		insert into user values(null,#{name},#{password},null)
+    	</insert>
+    	<select id="getUserByName" parameterType="String" resultType="pojo.User">
+    		select * from user where name = #{name}
+    	</select>
+    	<select id="getAllUserForAdmin" resultType="pojo.User">
+    		select * from user
+    	</select>
+    	<update id="updateUserNameByIdForAdmin">
+    		update user set name = #{name} where id = #{id}
+    	</update>
+    	<update id="updatePasswordByIdForAdmin">
+    		update user set password = #{password} where id = #{id}
+    	</update>
+    	<delete id="deleteUserByIdForAdmin" parameterType="int">
+    		delete from user where id = #{id}
+    	</delete>
+    	<select id="getUserLocation" parameterType="int" resultType="int">
+    		select count(*) from user where #{id} > id 
+    	</select>
+    </mapper>

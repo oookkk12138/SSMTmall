@@ -1,0 +1,30 @@
+*{
+	margin:0;
+}
+#header{
+	width:100%;
+	height:50px;
+	background:#222;
+}
+#header img{
+	width:45px;
+	height:45px;
+	margin-left:60px;
+}
+#header #topSpan{
+	position:absolute;
+	top:15px;
+	left:120px;
+	font-size:18px;
+}
+#header #topSpan span{
+	margin-left:14px;
+}
+#header a{
+	text-decoration:none;
+	color:#9d9d9d;
+	font-weight:bold;
+}
+#header a:hover{
+	color:#fff;
+}

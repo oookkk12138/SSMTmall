@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入两处地方：xmlns和xsi -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+    xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/aop
+   http://www.springframework.org/schema/aop/spring-aop.xsd
+   http://www.springframework.org/schema/tx
+   http://www.springframework.org/schema/tx/spring-tx.xsd
+   http://mybatis.org/schema/mybatis-spring 
+   http://mybatis.org/schema/mybatis-spring.xsd
+   http://www.springframework.org/schema/context   
+   http://www.springframework.org/schema/context/spring-context.xsd">
+   
+   <!-- 扫描包，凡是使用了注解的都需要扫描包 -->
+   <context:component-scan base-package="dao,service"></context:component-scan>
+   
+   <!-- 定义数据源 -->
+   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+   		<property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+   		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssmtmall?serverTimezone=UTC"></property>
+   		<property name="user" value="root"></property>
+   		<property name="password" value="admin"></property>
+   </bean>
+   
+   <!-- sqlSessionFaction相当于mybatis的核心配置文件 -->
+   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+   		<!-- 数据源 -->
+   		<property name="dataSource" ref="dataSource"></property>
+   		<!-- 引入mapping -->
+   		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+   		<!-- 引入mybatis-config.xml文件（除了数据源和mapper，其他配置都在那里配置） -->
+   		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+   </bean>
+   
+   <!-- mybatis扫描包，自动代理方式绑定到接口 -->
+   <mybatis-spring:scan base-package="dao" />
+   
+   <!-- 使用annotation来控制事务，使@Transaction生效 -->
+   <tx:annotation-driven/>
+   
+   <!-- 整合事务，class那个适用于mybatis和传统jdbc -->
+   <!-- 后续深层次的事务理解需要用到这个 -->
+   <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+   		<property name="dataSource" ref="dataSource"></property>
+   </bean>
+   
+   </beans>

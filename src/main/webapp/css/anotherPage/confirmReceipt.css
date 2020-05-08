@@ -1,0 +1,136 @@
+#confirmPageDiv{
+	font-size:12px;
+	font-family:arial;
+	margin:10px auto;
+	width:80%;
+}
+#confirmPayPic{
+	margin-top:5px;
+	margin-left:50px;
+	margin-bottom:80px;
+	width:900px;
+	position:relative;
+	/*这里使用相对定位是为了后面那三个时间能够根据它来设定绝对定位
+	不然那三个就是相对body来设置绝对定位*/
+}
+#confirmPayPic div{
+	color:#999999;
+}
+#thirdTime{
+	position:absolute;
+	top:100px;
+	left:400px;
+}
+#secondTime{
+	position:absolute;
+	top:100px;
+	left:190px;
+}
+#firstTime{
+	position:absolute;
+	top:100px;
+	left:-20px;
+}
+#confirmIConfirm{
+	margin:10px 10px 0px 10px;
+	font-size:16px;
+	font-weight:bold;
+	color:black;
+	padding-bottom:15px;
+	border-bottom:1px solid #adc8e6;
+}
+#orderInfo{
+	margin:20px 10px;
+	font-size:14px;
+	font-weight:normal;
+	color:black;
+}
+#orderTableDiv{
+	border:1px solid #dddddd;
+	width:100%;
+}
+#orderTableDiv table{
+	width:100%;
+}
+#orderTableDiv table tbody a{
+	color:#999;
+}
+#orderTableDiv table tbody a:hover{
+	text-decoration:none;
+	color:#c40000;
+}
+#orderTableDiv table td,th{
+	text-align:center;
+}
+#orderTableDiv table td{
+	padding:20px;
+}
+#orderTableDiv thead tr{
+	background:#e8f2ff;
+	height:33px;
+}
+#orderTableDiv tbody tr{
+	border:1px solid #dddddd;
+}
+#orderTableDiv .productPrice{
+	font-size:18px;
+	font-weight:bold;
+	color:#666666;
+}
+#rightFlow{
+	float:right;
+	font-size:14px;
+	margin-top:20px;
+}
+#rightFlow span b{
+	color:#c40000;
+}
+
+#detailedInfo{
+	border-top:1px solid #dddddd;
+	width:80%;
+	margin:10px auto;
+}
+#detailedInfo table{
+	margin-top:20px;
+	margin-left:50px;
+	width:80%;
+}
+#detailedInfo table td{
+	padding:15px;
+	width:50%;
+	font-size:14px;
+	color:black;
+}
+#detailedInfo .confirmPayOrderDetailWangWangGif{
+	display:inline-block;
+	background-image:url(/SSMTmall/image/anotherPage/wangwang.gif);
+	height:22px;
+	width:80px;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	margin-left:5px;
+}
+#surePay{
+	border:1px solid #f58b0f;
+	margin:20px;
+}
+#confirmPayWanging{
+	margin:20px 32%;
+	font-size:18px;
+	color:red;
+	font-weight:bold;
+}
+#surePay button{
+	margin:20px 50%;
+	width:67px;
+	height:30px;
+	border:1px solid #e67c00;
+	background:#f4a21d;
+	border-radius:4px;
+	color:white;
+	font-size:12px;
+}
+#surePay button:hover{
+	background:#f6ae30;
+}

@@ -1,0 +1,21 @@
+*{
+	margin:0;
+}
+#background{
+	width:60%;
+	height:140px;
+	margin:0 auto;
+	color:black;
+	font-size:14px;
+	font-weight:bold;
+	padding-top:20px;
+	border:1px solid #e5e5e5;
+}
+#background img{
+	vertical-align:middle;
+}
+#background #success{
+	width:80%;
+	padding-top:30px;
+	margin:0 auto;
+}

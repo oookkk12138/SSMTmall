@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    <mapper namespace="dao.ProductDao">
+    	<select id="getProductById" parameterType="int" resultMap="ProductBean">
+    		select product.id productid,name,subtitle,orignalprice,promoteprice,stock,createdate,salecount,product.categoryid productcategoryid,fiveimage.id fiveimageid,littleimageuri,bigimageuri,siximage.id siximageid,imageuri from product left join fiveimage on product.id = fiveimage.productid left join siximage on siximage.productid = product.id where product.id = #{id}
+    	</select>
+    	<resultMap type="pojo.Product" id="ProductBean" autoMapping="true">
+    		<id column="productid" property="id"/>
+    		<result column="productcategoryid" property="categoryId"/>
+    		<collection property="fiveImages" ofType="pojo.FiveImage" autoMapping="true">
+    			<id column="fiveimageid" property="id"/>
+    		</collection>
+    		<collection property="sixImages" ofType="pojo.SixImage" autoMapping="true">
+    			<id column="siximageid" property="id"/>
+    		</collection>
+    	</resultMap>
+    	<select id="getProductByName" parameterType="String" resultMap="ProductBean">
+    		select product.id productid,name,subtitle,orignalprice,promoteprice,stock,createdate,salecount,product.categoryid productcategoryid,fiveimage.id fiveimageid,littleimageuri,bigimageuri,siximage.id siximageid,imageuri from product left join fiveimage on product.id = fiveimage.productid left join siximage on siximage.productid = product.id where product.name like concat('%',#{name},'%')
+    	</select>
+    	<update id="updateStockAndSaleCountById">
+    		update product set stock = stock - #{number},salecount = salecount + 1 where id = #{id}
+    	</update>
+    	<update id="updateStockById" parameterType="int">
+    		update product set stock = stock + 100 where id = #{id}
+    	</update>
+    	<select id="getAllProductByCategoryIdForAdmin" parameterType="int" resultMap="ProductBean">
+    		select product.id productid,name,subtitle,orignalprice,promoteprice,stock,createdate,salecount,product.categoryid productcategoryid,fiveimage.id fiveimageid,littleimageuri,bigimageuri,siximage.id siximageid,imageuri from product left join fiveimage on product.id = fiveimage.productid left join siximage on siximage.productid = product.id where categoryid = #{categoryId}
+    	</select>
+		<insert id="addProductForAdmin" parameterType="pojo.Product">
+			insert into product values(null,#{name},#{subtitle},#{orignalPrice},#{promotePrice},#{stock},#{createDate},#{saleCount},#{categoryId})
+		</insert>
+		<update id="updateProductForAdmin" parameterType="pojo.Product">
+			update product
+			<set>
+				<if test="name != null and name != ''">
+					name = #{name},
+				</if>
+				<if test="subtitle != null and subtitle != ''">
+					subtitle = #{subtitle},
+				</if>
+				<if test="orignalPrice != null and orignalPrice != ''">
+					orignalprice = #{orignalPrice},
+				</if>
+				<if test="promotePrice != null and promotePrice != ''">
+					promoteprice = #{promotePrice},
+				</if>
+				<if test="stock != null and stock != ''">
+					stock = #{stock},
+				</if>
+				<if test="createDate != null">
+					createdate = #{createDate},
+				</if>
+				<if test="saleCount != null and saleCount != ''">
+					saleCount = #{saleCount}
+				</if>
+			</set>
+			where id = #{id}
+		</update>
+		<delete id="deleteProductByIdForAdmin">
+			delete from product where id = #{id}
+		</delete>
+    </mapper>

@@ -1,0 +1,375 @@
+#background {
+	width: 100%;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#background #left {
+	float: left;
+	width: 400px;
+	height: 500px;
+	margin-left: 280px;
+}
+
+#background #picture {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	border: 1px solid #f2f2f2;
+}
+
+#background #pictures {
+	margin-top: 10px;
+	margin-left: 35px;
+}
+
+#background #img {
+	width: 360px;
+	height: 360px;
+}
+
+#background #pictures span {
+	display: inline-block;
+	border: 2px solid white;
+}
+
+#background #pictures span img {
+	width: 60px;
+	height: 60px;
+}
+
+#background #pictures span:hover {
+	border-color: black;
+}
+
+#background #right {
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-left: 30px;
+}
+
+#background #one {
+	font-size: 16px;
+	color: black;
+}
+
+#background #two {
+	font-size: 12px;
+	color: #dd2727;
+}
+
+#background #green {
+	background: #2da77a;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+
+#background #juhuasuan {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 黑体;
+}
+
+#background #time {
+	color: #ffc057;
+	font-family: 黑体;
+}
+
+#background #gray {
+	background-image: url(/SSMTmall/image/productPage/priceBackground.png);
+	/*注意这里的背景图片的路径要用向左的斜杠“/”，向右的斜杠不能识别*/
+	color: #666666;
+	padding: 10px;
+}
+
+#background #gray img {
+	width: 50px;
+	height: 20px;
+}
+
+#background #three {
+	margin-left: 20px;
+}
+
+#background #four {
+	display: inline-block;
+	margin-top: 10px;
+	color: #999999;
+	width: 68px;
+}
+
+#background #six {
+	display: inline-block;
+	margin-top: 10px;
+	color: #999999;
+	width: 68px;
+}
+
+#background #deletedPrice {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: line-through;
+	/*line-through是删除线*/
+}
+
+#background #seven {
+	font-size: 30px;
+	color: #c40000;
+	font-weight: bold;
+}
+
+#background #div-a {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	border-top: 1px #c9c9c9 dotted;
+	border-bottom: 1px #c9c9c9 dotted;
+}
+
+#background #div-a .div-b {
+	float: left;
+	width: 50%;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	margin-top: 10px;
+	color: #999999;
+}
+
+#background #div-a .div-b:first-child {
+	border-right: 1px solid #e5dfda;
+}
+
+#background #div-a .span-c {
+	color: #c40000;
+	font-weight: bold;
+}
+
+#background #eight {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#background #eight input {
+	width: 50px;
+	height: 30px;
+}
+
+#background #num-btn {
+	float: left;
+	color: #999999;
+}
+
+#background #button {
+	float: left;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#background #increase {
+	width: 20px;
+	height: 14px;
+	border: 1px solid #999;
+	display: block;
+}
+
+#background #decrease {
+	width: 20px;
+	height: 14px;
+	display: block;
+	border: 1px solid #999;
+	margin-top: 2px;
+}
+
+#background #button img {
+	vertical-align: top;
+	/*vertical是垂直的意思，设置垂直居中,top.middle.buttom.*/
+	padding: 4px;
+}
+
+#background #stock {
+	margin-left: 10px;
+	line-height: 2.5em;
+	color: #999;
+}
+
+#background #night {
+	margin-top: 20px;
+}
+
+#background #night span {
+	color: #999999;
+}
+
+#background #night a {
+	color: #666666;
+}
+
+#purchase {
+	width: 180px;
+	height: 40px;
+	background: #ffeded;
+	color: #c40000;
+	border: 1px solid #c40000;
+	margin-top: 20px;
+	margin-left: 10%;
+	font-size: 16px;
+}
+
+#background #cart {
+	width: 180px;
+	height: 40px;
+	background: #c40000;
+	border: 1px solid #c40000;
+	margin-left: 20px;
+	font-size: 16px;
+	color: white;
+}
+
+#background #cart span {
+	font-size: 12px;
+	margin-right: 5px;
+	color: white;
+}
+
+#background #commodityDetails {
+	width: 50%;
+	height: 40px;
+	margin-top: 20px;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	border-bottom: 3px solid #dfdfdf;
+}
+
+#background #goods {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	border-right: 1px solid #cfbfb1;
+	border-bottom-color: #dfdfdf;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 14px;
+	text-align: center;
+	color: black;
+}
+
+#background #comment {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	border-right: 1px solid #cfb1b1;
+	border-bottom-color: #dfdfdf;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 14px;
+	text-align: center;
+	color: black;
+}
+
+#background #topBorder-first {
+	width: 100px;
+	height: 2px;
+	background: #c40000;
+	position: relative;
+	top: -40px;
+}
+
+#background #triangle-first {
+	width: 0px;
+	height: 0px;
+	border: 4px solid #c40000;
+	border-color: #c40000 white white white;
+	position: relative;
+	top: -40px;
+	left: 46px;
+}
+
+#background #topBorder-second {
+	width: 103px;
+	height: 2px;
+	background: #c40000;
+	position: relative;
+	top: -40px;
+	left: 100px;
+	visibility: hidden;
+}
+
+#background #triangle-second {
+	width: 0px;
+	height: 0px;
+	border: 4px solid #c40000;
+	border-color: #c40000 white white white;
+	position: relative;
+	top: -40px;
+	left: 150px;
+	visibility: hidden;
+}
+
+#background #productParameters {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+}
+
+#background #productParameters table{
+	margin-top:10px;
+}
+
+#background #productParameters td{
+	height:40px;
+	width:240px;
+	font-size:12px;
+	color:#666666;
+}
+
+#background#productParameters table tr td span{
+	color:#999999;
+	font-weight:bold;
+}
+
+#background #bottom-img {
+	width: 50%;
+	margin: 0 auto;
+	margin-top-color: #dfdfdf;
+}
+
+#background #bottom-img img {
+	width: 100%;
+}
+
+#background #evaluation {
+	display: none;
+	width: 50%;
+	font-family: Arial;
+	position: relative;
+	left: 25%;
+}
+
+#background #evaluation .comments {
+	width: 100%;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+#background #evaluation p {
+	padding-top: 30px;
+	margin-left: 30px;
+	color: #333333;
+}
+
+#background #evaluation .comments-left {
+	display: inline-block;
+	margin-left: 30px;
+	margin-top: 20px;
+	color: #cccccc;
+}
+
+#background #evaluation .comments-right {
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+	color: #404040;
+	margin-top: 20px;
+}

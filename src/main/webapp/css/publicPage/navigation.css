@@ -1,0 +1,44 @@
+#nav a {
+	text-decoration: none;
+	color: #999999;
+}
+
+#nav {
+	font-size: 12px;
+	font-family: Arial;
+	height: 30px;
+	background: #f2f2f2;
+}
+
+#nav .left {
+	float: left;
+	margin-left: 20px;
+	padding: 6px 0;
+}
+
+#nav .right {
+	float: right;
+	margin-right: 20px;
+	padding: 6px 0;
+}
+
+#nav a:hover {
+	color: red;
+	color: #c40000;
+}
+
+#nav span {
+	color: #999999;
+	margin-right: 5px;
+}
+
+#nav .glyphicon {
+	color: #c40000;
+}
+
+#nav:first-child:first-child {
+	padding-left: 200px;
+}
+#nav:last-child:last-child {
+	padding-left: 200px;
+}

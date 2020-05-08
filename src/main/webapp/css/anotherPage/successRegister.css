@@ -1,0 +1,17 @@
+*{
+	margin:0;
+}
+#background{
+	width:100%;
+	height:100px;
+	background:#f3fdf6;
+	border-radius:30px;
+}
+#background img{
+	vertical-align:middle;
+}
+#background #success{
+	width:80%;
+	padding-top:30px;
+	margin:0 auto;
+}

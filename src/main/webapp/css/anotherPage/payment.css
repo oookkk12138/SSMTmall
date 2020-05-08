@@ -1,0 +1,38 @@
+body{
+	font-size:12px;
+	font-family:Arial;
+}
+#simpleLogo{
+	margin-left:220px;
+	margin-top:10px;
+}
+#center{
+	text-align:center;
+}
+#saoYisao{
+	text-align:center;
+	padding-bottom:10px;
+	margin:10px auto;
+}
+#saoYisao span{
+	color:#ff6600;
+	font-weight:bold;
+	font-size:20px;
+	display:inline-block;
+	margin-top:10px;
+}
+#QRCode img{
+	width:300px;
+	height:370px;
+}
+#confirm button{
+	background:#00aaee;
+	border:1px solid #00aaee;
+	text-align:center;
+	font-size:14px;
+	font-weight:700px;
+	line-height:31px;
+	color:white;
+	width:107px;
+	margin-top:20px;
+}

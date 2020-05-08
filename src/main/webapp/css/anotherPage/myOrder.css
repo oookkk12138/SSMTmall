@@ -1,0 +1,95 @@
+#background{
+	width:70%;
+	margin:10px auto;
+	font-size:12px;
+}
+#background #head{
+	border-bottom:2px solid #e8e8e8;
+}
+#background #head span{
+	border-right:1px solid #e8e8e8;
+	display:inline-block;
+	font-size:16px;
+	font-weight:bold;
+	color:black;
+	padding:0px 20px;
+	margin-bottom:10px;
+	text-decoration:none;
+}
+#background #head span:hover{
+	color:red!important;
+}
+
+#background #body{
+	background:#f5f5f5;
+	margin-top:10px;
+	border:1px solid #e8e8e8;
+}
+#background #body table{
+	font-size:12px;
+	width:100%;
+}
+#background #body table td{
+	padding:10px 0px;
+	text-align:center;
+}
+#background .order{
+	margin-top:20px;
+}
+#background .order table{
+	width:100%;
+	border:2px solid #ececec;
+	font-size:12px;
+	padding:20px 0px;
+	text-align:center;
+}
+#background .order table:hover{
+	border:2px solid #aaa;
+}
+#background .order table td{
+	padding:8px 10px;
+}
+#background .first{
+	background:#f1f1f1;
+}
+
+/*注意这种css引用大图片中的一部分的做法*/
+#background .orderItemWangWangGif{
+	background-image:url(/SSMTmall/image/anotherPage/wangwang.gif);
+	display:inline-block;
+	/*背景图片要结合block属性才能显示*/
+	height:22px;
+	width:67px;
+	background-repeat:no-repeat;
+	/*这是不重复的意思，背景图片默认会重复全屏幕，repeat-x重复x轴，repeat-y重复y轴*/
+	background-color:transparent;/*设置背景颜色为透明*/
+	background-attachment:scroll;
+	/*设置背景图片跟随页面部分滚动而滚动，默认为fixed不随页面内容滚动而滚动*/
+	background-position:-0px -0px;
+}
+
+#background .second div img{
+	position:relative;
+	left:-150px;
+}
+#background .oldPrice{
+	color:#999999;
+	font-size:14px;
+}
+#background .newPrice{
+	color:#3c3c3c;
+	font-size:14px;
+}
+
+#background .orderListItemDelete{
+	display:inline-block;
+	margin:0px 10px;
+	color:#999999;
+	font-size:16px;
+}
+#background #head a #allOrders{
+	color:#c40000;
+}
+#background .deleteOrder{
+	cursor:pointer;
+}

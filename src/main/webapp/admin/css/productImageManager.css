@@ -1,0 +1,133 @@
+#background{
+	width:96%;
+	margin:0 auto;
+	height:2000px;
+}
+#topNavigation{
+	font-size:18px;
+}
+#topNavigation a:hover{
+	text-decoration:none;
+}
+
+/*左边*/
+#leftDiv{
+	width:50%;
+	float:left;
+}
+#leftDiv #leftTopDiv table{
+	margin:0 auto;
+	width:600px;
+	border:1px solid #faebcc;
+}
+#leftDiv #leftTopDiv tr{
+	height:60px;
+}
+#leftDiv #leftTopDiv table thead td{
+	background:#fcf8e3;
+	font-weight:bold;
+	color:#8a6d3b;
+}
+#leftDiv #leftTopDiv table tr td input{
+	height:40px;
+	width:300px;
+}
+#leftDiv #leftTopDiv td{
+	font-size:18px;
+	line-height:2em;
+}
+#leftDiv #leftTopDiv #submit{
+	height:40px;
+	width:70px;
+	text-decoration:center;
+	vertical-align:middle;
+	text-decoration:none;
+	border:none;
+	border-radius:50px;
+}
+
+#leftDiv #leftButtomDiv{
+	margin-top:10px;
+}
+#leftDiv #leftButtomDiv table{
+	margin:0 auto;
+	width:600px;
+}
+#leftDiv #leftButtomDiv table thead{
+	font-size:18px;
+	font-weight:bold;
+	line-height:2em;
+}
+#leftDiv #leftButtomDiv table td{
+	height:40px;
+	text-align:center;
+}
+#leftDiv #leftButtomDiv table td span{
+	font-size:18px;
+	line-height:2em;
+}
+#leftDiv #leftButtomDiv table td a:hover{
+	text-decoration:none;
+	color:#c40000;
+}
+
+/*右边*/
+#rightDiv{
+	width:50%;
+	float:right;
+}
+#rightDiv #leftTopDiv table{
+	margin:0 auto;
+	width:600px;
+	border:1px solid #faebcc;
+}
+#rightDiv #leftTopDiv tr{
+	height:60px;
+}
+#rightDiv #leftTopDiv table thead td{
+	background:#fcf8e3;
+	font-weight:bold;
+	color:#8a6d3b;
+}
+#rightDiv #leftTopDiv table tr td input{
+	height:40px;
+	width:300px;
+}
+#rightDiv #leftTopDiv td{
+	font-size:18px;
+	line-height:2em;
+}
+#rightDiv #leftTopDiv #submit{
+	height:40px;
+	width:70px;
+	text-decoration:center;
+	vertical-align:middle;
+	text-decoration:none;
+	border:none;
+	border-radius:50px;
+}
+
+#rightDiv #leftButtomDiv{
+	margin-top:10px;
+}
+#rightDiv #leftButtomDiv table{
+	margin:0 auto;
+	width:600px;
+}
+#rightDiv #leftButtomDiv table thead{
+	font-size:18px;
+	font-weight:bold;
+	line-height:2em;
+}
+#rightDiv #leftButtomDiv table td{
+	height:40px;
+	text-align:center;
+}
+#rightDiv #leftButtomDiv table td span{
+	font-size:18px;
+	line-height:2em;
+}
+#rightDiv #leftButtomDiv table td a:hover{
+	text-decoration:none;
+	color:#c40000;
+}

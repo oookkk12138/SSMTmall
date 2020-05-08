@@ -1,0 +1,74 @@
+#backgroundPic img {
+	margin: 0 auto;
+	display: block;
+}
+
+#warning{
+	color: #3c3c3c;
+	font-size: 16px;
+	font-weight: bold;
+	text-align:center;
+	line-height:30px;
+	margin:0 auto;
+	margin-top:-40px;
+	margin-bottom:10px;
+	width:300px;
+	height:30px;
+	background:#ebccd1;
+	border-radius:10px;
+	color:#a94442;
+	visibility:hidden;
+}
+
+#registerDiv {
+	background: white;
+	width: 380px;
+	height: 400px;
+	position: absolute;
+	right: 15%;
+	top: 240px;
+	padding: 60px 25px 80px 25px;
+	color: #3c3c3c;
+	font-size: 14px;
+}
+
+#settingName {
+	color: #3c3c3c;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+#left .leftDiv {
+	margin-top: 29px;
+	text-align: right;
+}
+
+#right .rightDiv {
+	margin-top: 20px;
+}
+
+#registerDiv input {
+	width: 213px;
+	height: 36px;
+	border: 1px solid #dedede;
+}
+
+#submit {
+	width: 170px;
+	height: 36px;
+	border-radius: 2px;
+	color: white;
+	background: #c40000;
+	border: width:0px; /*无边框*/
+	margin-top: 20px;
+	margin-left: 80px;
+}

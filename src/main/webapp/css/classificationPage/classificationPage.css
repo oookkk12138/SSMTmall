@@ -1,0 +1,179 @@
+#background {
+	width: 100%;
+}
+
+#background img {
+	display: block;
+	margin: 0 auto;
+}
+
+#background #first {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#background #first td {
+	height: 17px;
+	border: 1px solid #cccccc;
+	font-size: 12px;
+	font-family: arial;
+	padding: 2px; /*padding是设置td的内边距*/
+}
+
+#background table {
+	display: inline;
+}
+
+#background #table-background {
+	width: 80%;
+	margin: 0 auto;
+	height: 40px;
+	background: #faf9f9;
+	margin-top: 50px;
+}
+
+#background #second {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid #cccccc;
+}
+
+#background #second td {
+	height: 21px;
+	width: 56px;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+#background #second #tips {
+	width: 180px;
+}
+
+#background input {
+	border-width: 0; /*隐藏inout边框*/
+	width: 50px;
+	height: 15px;
+	margin-left: 3px;
+	padding-left: 4px;
+}
+
+#background #table-background span {
+	color: #806f66;
+}
+
+#background #table-background span:hover {
+	color: #c40000;
+	text-decoration: none;
+}
+
+#background #first td:hover {
+	background: #f1edec; /*hover也能用在非a标签*/
+	cursor: pointer;
+}
+
+#background #a {
+	width: 300px;
+	height: 300px;
+	background: pink;
+	margin: 500px;
+}
+
+#background #recommended-list {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+#background #recommended-list .commodity {
+	width: 225px;
+	height: 355px;
+	display: inline-block;
+	float: left;
+	border: 3px solid #eeeeee;
+	margin-top: 16px;
+	margin-left: 12px;
+}
+
+#background #recommended-list .commodity .topimg {
+	width: 100%;
+	height: 190px;
+}
+
+#background #recommended-list .Tmall {
+	display: block;
+	color: #999999;
+	padding-left: 8px;
+}
+
+#background #recommended-list .commodity h4 {
+	font-size: 20px;
+	color: #c40000;
+	padding-left: 8px;
+}
+
+#background #recommended-list .commodity p {
+	color: #333333;
+	padding-left: 4px;
+	font-size: 14px;
+}
+
+#background #recommended-list .commodity #productName {
+	width:100%;
+	height:70px;
+}
+
+#background #recommended-list .commodity:hover {
+	border-color: #c40000;
+}
+
+#background #recommended-list .commodity p:hover {
+	color: #c40000;
+}
+
+#background #recommended-list .commodity .Tmall:hover {
+	color: #c40000;
+}
+
+#background #recommended-list .deal {
+	display: inline-block;
+	width: 110px;
+	height: 22px;
+	background: white;
+	float: left;
+	margin-top: 4px;
+	padding-top: 2px;
+	padding-left: 8px;
+	border-top: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+}
+
+#background #recommended-list .assess {
+	display: inline-block;
+	width: 60px;
+	height: 22px;
+	float: left;
+	margin-top: 4px;
+	padding-top: 2px;
+	padding-left: 6px;
+	border-top: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+}
+
+#background #recommended-list .img {
+	display: inline-block;
+	width: 46px;
+	height: 22px;
+	background: white;
+	float: left;
+	margin-top: 4px;
+	padding-top: 4px;
+	padding-left: 0px;
+	border-top: 1px solid #eeeeee;
+}
+
+#background #recommended-list.img img {
+	width: 20px;
+	height: 25px;
+}

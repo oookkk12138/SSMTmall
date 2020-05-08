@@ -1,0 +1,42 @@
+#all{
+	border:1px solid #d4d4d4;
+	margin:10px auto 20px auto;
+	width:80%;
+	font-size:12px;
+}
+#head{
+	height:61px;
+	background:#ecffdc;
+	padding:17px 0px 0px 25px;
+}
+#head span{
+	font-weight:bold;
+	font-size:14px;
+	margin-left:10px;
+}
+#body{
+	padding:26px 35px;
+}
+#body ul li{
+	color:#333333;
+	padding-left:15px;
+	padding-top:5px;
+}
+#body ul li span{
+	color:#b10000;
+	font-weight:bold;
+	font-size:14px;
+	font-family:arial;
+}
+#choice{
+	margin-left:25px;
+}
+#dottedLine{
+	width:80%;
+	margin:0px auto;
+	border-bottom:1px dotted #d4d4d4;
+}
+#footer{
+	margin:23px 45px;
+	color:black;
+}

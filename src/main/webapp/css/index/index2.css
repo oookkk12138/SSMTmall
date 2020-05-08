@@ -1,0 +1,54 @@
+#list {
+	position: absolute;
+	top: 220px;
+	left: 310px;
+	width: 180px;
+	height: 500px;
+	background: #e2e2e3;
+}
+
+#list span {
+	margin-top: 10px;
+	margin-left: 8px;
+}
+
+#list a {
+	display: block;
+	background: #e2e2e3;
+	color: black;
+}
+
+#list a:hover {
+	text-decoration: none;
+}
+
+#list-right {
+	position: absolute;
+	top: 220px;
+	left: 490px;
+	width: 850px;
+	height: 500px;
+	background: white;
+}
+
+#list-right .row {
+	margin: 0 auto;
+	width: 85%;
+	height: 50px;
+	margin-top: 8px;
+	border-bottom: 1px dashed #e7e7e7;
+	line-height: 3.5em;
+}
+
+#list-right .row span {
+	margin-left: 20px;
+}
+
+#list-right a {
+	color: #999;
+}
+
+#list-right a:hover {
+	text-decoration: none;
+	color: #c40000 !important;
+}
